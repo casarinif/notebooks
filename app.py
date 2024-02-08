@@ -16,6 +16,9 @@ def gerar_grafico_dispersao():
     st.write('Criando um gráfico de dispersão entre odometer e price')
     fig = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig, use_container_width=True)
+    
+# Título da página
+st.title('Análise de dados de veículos com Streamlit')
 
 # Botões para gerar gráficos
 hist_button = st.button('Criar Histograma')
